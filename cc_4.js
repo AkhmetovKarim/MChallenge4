@@ -42,3 +42,9 @@ let employee = { // Declare an employee object with properties
 for (let key in employee) {     //Use for in loop to iterate thru object properties
     console.log(`${key}: ${employee[key]}`); //Log
 }
+
+//Task 6 - Product Listings
+let products = ["Laptop", "Mouse", "Keyboard"]; //Declare an array
+for (let product of products) {                 //Use for of loop to display each product
+    console.log(`Product: ${product}`);         //Log
+}
