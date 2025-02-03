@@ -16,3 +16,12 @@ for (let i=0; i< sales.length; i++) { //Use a  for loop to calculate total sales
 totalSales += sales[i];// Add each sale
 }
 console.log(`Total Sales: $${totalSales}`); //Log
+
+//Task 3 - Inventory Depletion
+let stock = 10; //Declare stock variable
+while (stock > 0) { //Use a while loop to decrease stocj until reaches 0
+    console.log(`Available Stock: ${stock}`);
+    stock--; //Subtracts stock by 1
+}
+console.log("Stock is empty") //Log
+
