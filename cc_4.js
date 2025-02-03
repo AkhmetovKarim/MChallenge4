@@ -73,3 +73,9 @@ const discountRate = 0.5;          //Declare discountRate
 const discountedPrices = applyDiscount(prices, price => price * (1- discountRate));
 console.log("Prices:", prices);    //Log
 console.log("Discounted Prices:", discountedPrices);
+
+//Task 10 - Loyalty Points
+const calculatePoints = (purchaseAmount) => purchaseAmount / 10; //Write arrow function
+let purchase = 500;
+let points = calculatePoints(purchase);                          //Calculate how much loyalty points you get 
+console.log(`Loyalty Points Available: ${points}`);              //Log
