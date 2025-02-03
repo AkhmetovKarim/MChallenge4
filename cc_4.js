@@ -54,3 +54,12 @@ let orders = [101, 102, 103]; //Declare an array
 orders.forEach((order, index) => {   //Use forEach to log each other ID
     console.log(`Order ${index + 1}: ID ${order}`);
 });
+
+//Task 8 - Tax Collection
+const amount = 35000;  //Declare variable amount
+const taxRate = 0.17;  //Declare variable taxRate
+const tax = calculateTax(amount, taxRate);   
+function calculateTax(amount, taxRate) { //Use a function to calculate sales tax
+    return amount * taxRate;
+}
+console.log(`Sales Tax: $${tax}`); //Log 
