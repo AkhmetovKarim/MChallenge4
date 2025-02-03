@@ -25,3 +25,10 @@ while (stock > 0) { //Use a while loop to decrease stocj until reaches 0
 }
 console.log("Stock is empty") //Log
 
+//Task 4 - Customer Survey
+let responses = 0; //Declare a variable responses
+do {               //Use a do while loop to collec responses
+    console.log(`Responses: ${responses}`);
+    responses++; 
+} while (responses < 3);
+console.log("Survey complete"); //Log
