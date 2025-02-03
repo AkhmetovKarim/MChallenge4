@@ -32,3 +32,13 @@ do {               //Use a do while loop to collec responses
     responses++; 
 } while (responses < 3);
 console.log("Survey complete"); //Log
+
+//Task 5 - Employee Information
+let employee = { // Declare an employee object with properties
+    name: "Alice",
+    position: "Manager",
+    salary: 75000
+};
+for (let key in employee) {     //Use for in loop to iterate thru object properties
+    console.log(`${key}: ${employee[key]}`); //Log
+}
