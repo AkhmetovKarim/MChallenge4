@@ -63,3 +63,13 @@ function calculateTax(amount, taxRate) { //Use a function to calculate sales tax
     return amount * taxRate;
 }
 console.log(`Sales Tax: $${tax}`); //Log 
+
+//Task 9 - Discount Application
+function applyDiscount(prices, discountFunction) {  // Declare a function applyDiscount
+    return prices.map(price => discountFunction(price));
+}
+const prices = [1500, 2000, 3000]; //Declare an array
+const discountRate = 0.5;          //Declare discountRate
+const discountedPrices = applyDiscount(prices, price => price * (1- discountRate));
+console.log("Prices:", prices);    //Log
+console.log("Discounted Prices:", discountedPrices);
