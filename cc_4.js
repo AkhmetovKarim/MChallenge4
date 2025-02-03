@@ -48,3 +48,9 @@ let products = ["Laptop", "Mouse", "Keyboard"]; //Declare an array
 for (let product of products) {                 //Use for of loop to display each product
     console.log(`Product: ${product}`);         //Log
 }
+
+//Task 7 - Order processing
+let orders = [101, 102, 103]; //Declare an array
+orders.forEach((order, index) => {   //Use forEach to log each other ID
+    console.log(`Order ${index + 1}: ID ${order}`);
+});
